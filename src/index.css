@@ -1,0 +1,85 @@
+.main-wrapper {
+  text-align: center;
+}
+
+.add-todo {
+  font-size: large;
+  width: 260px;
+}
+
+.add-todo-button {
+  font-size: large;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.section-wrapper {
+  margin: auto;
+  text-align: center;
+}
+
+.section-wrapper ul {
+  display: flex;
+  justify-content: center;
+}
+
+.section-wrapper ul li {
+  width: 100px;
+  list-style: none;
+  border: 1px solid black;
+  font-size: x-large;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.section-wrapper ul li:hover {
+  background-color: black;
+  color: white;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+
+.todo-ul {
+  list-style: none;
+}
+
+.todo-ul li {
+  font-size: larger;
+  text-align: left;
+}
+
+.todo-list-wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .main-wrapper {
+    text-align: left;
+  }
+
+  .add-todo {
+    width: 100%;
+  }
+
+  .add-todo-button {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .section-wrapper ul li {
+    width: auto;
+  }
+
+  .todo-list-wrapper {
+    flex-direction: column;
+  }
+}
